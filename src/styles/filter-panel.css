@@ -1,0 +1,72 @@
+@charset 'utf-8';
+
+.checkWrapper {
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .5s linear;
+}
+.checkWrapper.show{
+  width: 100%;
+  height: auto;
+  padding: 20px 20px 35px;
+  opacity: 1;
+  background-color:rgba(255, 255, 255, 1);
+}
+.system-platform {
+  display: flex;
+  margin-bottom: 12px;
+}
+.system-name {
+  width: 90px;
+}
+.system-items {
+  flex: 1;
+  display: flex;
+}
+.el-checkbox {
+  margin: 0 30px 8px 0;
+}
+.system-items .el-checkbox {
+  width: 76px;
+}
+.system-items .first-item {
+  display: inline-block;
+  width: 105px;
+}
+.system-items .long-item {
+  flex: 1;
+  position: relative;
+}
+.system-items .long-item .checkios {
+  position: absolute;
+}
+.system-items .long-item .el-checkbox-group label:first-child{
+  margin-left: 105px;
+}
+.el-checkbox-group.inline-block {
+  display: inline-block;
+}
+
+.systemName ,.contentType , .dataShow_version {
+  color:rgba(51, 60, 79, 0.698039215686274);
+  /* padding: 10px 10px 10px ; */
+  /* margin: auto; */
+  margin-top: 5px; 
+}
+
+.checkObject{
+  display: inline-block;
+  padding-left: 10px;
+}
+.checkWrapper .sendButton {
+  margin: 15px 0 0 90px;
+  padding: 12px 30px;
+}
+.echartsLine>*{
+  margin-bottom: 30px;
+  border: none!important;
+  background-color: #fff;
+}

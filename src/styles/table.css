@@ -1,0 +1,25 @@
+
+.el-table.empty-table {
+  width: 1000px;
+}
+.el-table.empty-table .el-table__body-wrapper{
+  overflow-x: hidden;
+}
+.el-table__empty-block {
+  height: 226px;
+}
+.el-table__empty-text {
+  position: absolute;
+  z-index: 1;
+  left: 5px;
+  top: 135px;
+  display: block;
+  width: 98%;
+  height: 26px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #eee;
+  text-align: center;
+  line-height: 160px;
+  background-color: transparent;
+}

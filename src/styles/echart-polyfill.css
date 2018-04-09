@@ -1,0 +1,60 @@
+@charset 'utf-8';
+
+.tooltip-grid {
+  display: flex;
+  min-width: 170px;
+  line-height: 1.5;
+}
+.tooltip-grid-item {
+  flex: 1;
+}
+.tooltip-grid-item:nth-child(2) {
+  text-align: center;
+  padding-right: 15px;
+}
+
+.tooltip-grid .markerLine {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.tooltip-grid .markerLine .marker {
+/*   position: absolute;
+  left: -8px;
+  top: 50%;
+  margin-top: -1px; */
+  width: 26px;
+  height: 3px;
+  margin-right: 10px;
+}
+
+.tooltip-grid .markerLine .marker>span {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  margin-top: -4.5px;
+}
+
+.linecharts-container {
+  position: relative;
+}
+.line-chart__empty-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  left: 2%;
+  right: 12%;
+  bottom: 5%;
+  top: 12%;
+  /*left: 785px;*/
+  font-size: 18px;
+  font-weight: 700;
+  color: #eee;
+  text-align: center;
+}
+.line-chart__empty-text>* {
+  /* line-height: 12.5; */
+  transform: rotate(-45deg);
+}
